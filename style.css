@@ -183,7 +183,7 @@ img {
 }
 
 /* about area css */
-.about{
+.About{
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 .about-hotel{
@@ -261,6 +261,7 @@ img {
 .aboutbed h3{
     padding-bottom:2rem;
     font-size: 21px;
+    font-weight: 400;
 }
 .box{
     padding: 1rem;
@@ -333,4 +334,40 @@ img {
 .booking-calender p{
     color: rgba(0, 0, 0, 0.4);
     font-size: 14px;
+}
+
+/* All user reviews and ratings */
+.user-review-part {
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+}
+.user-review-part h4{
+    font-size: 21px;
+    font-weight: 500;
+}
+.user-review-part h4 i{
+    color: var(--primary-color);
+}
+
+    /* comments grid css */
+.comments-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5rem;
+    padding: 1.5rem;
+}    
+.rating-line::before{
+    content: '';
+    width: 100px;
+    height: 6px;
+    background-color: black;
+    position:absolute;
+    border-radius: 5px;
+    margin:12px 0 0 -120px;
+}
+.rating-for-feature{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
 }
