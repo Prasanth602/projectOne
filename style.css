@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+   --primary-color:#FF385C;
+}
+
+/* Nav Bar CSS */
+header{
+    height: 80px;
+    padding: 1rem 4rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+/* logo css */
+.logo{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* search area css */
+.search-bar{
+    margin-left: 4rem;
+    width: 348px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border-radius:20px;
+    font-size: 17px;
+}
+.search-bar:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.search-bar a{
+    text-decoration: none;
+    color: black;
+}
+.search-area{
+    padding: 4px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.search-text {
+    padding: 8px;
+}
+.fa-search{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #ffff;
+}
+
+/* user login area css */
+.user-login{
+   display: inline-block;
+   text-align: center;
+   font-size: 16px;
+}
+.user-login span{
+    padding: 8px;
+    cursor: pointer;
+}
+.user-text:hover{
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+.fa-globe{
+    padding: 8px;
+}
+
+.fa-globe:hover{
+    background-color: rgba(0,0,0,0.06);
+    border-radius: 50%;  
+}
+
+.signup{
+    display: inline-block;
+    border: 1px solid rgba(211, 189, 189, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    padding: 4px;
+    
+}
+.signup:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.fa-bars{
+    font-size: 17px;
+}
+.fa-user-circle{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Main body css */
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* location name and ratings part */
+.location{
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+.location h2{
+    color: rgb(32, 32, 32);
+}
+.address{
+    display: flex;
+    justify-content:space-between;
+}
+.rating a{
+    color: rgb(32, 32, 32);
+}
+.adressofHoltel a{
+    color:#717171;
+}
+.ratings i{
+    color: var(--primary-color);
+}
+
+/* share and save buttons */
+.share span{
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.share span:hover{
+    background-color: rgba(0,0,0,0.06);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.share span i{
+    margin-right: 8px;
+}
+
+/* css for images grid part */
+.image-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 1.5rem;
+    column-gap: 10px;
+    row-gap: 10px;
+}   
+img {
+    max-width: 100%
+}
+.first-image > img {
+    width: auto;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}    
+.first-image {
+    grid-row: 1 / 3;
+}    
+.image > img {
+    width: 272px;
+    height:196px;
+    object-fit: cover;
+    
+}
+.third-image > img{
+    border-radius: 0 20px 0 0;
+}
+.fifth-image > img {
+    border-radius: 0  0 20px 0;
+}
+.image > img:hover, .first-image > img:hover{
+   opacity: 1.5;
+   cursor: pointer;
+}
+
+/* about area css */
+.about{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.about-hotel{
+    width: 700px;
+    margin: 0 1.5rem;
+    
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    line-height: 2rem;
+}
+.hoteltype h3{
+    font-size: 21px;
+    font-weight: 500;
+}
+.hoteltype p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.9);
+}
+.profile img{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* freatures by reviewer */
+.featuresbyreviewer{
+    padding: 2rem 0 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.feature{
+    display: flex;
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+.feature i{
+    margin-right: 1rem;
+    font-size: 26px;
+}
+.feature p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+.feature h4{
+    font-weight: 600;
+}
+
+/* article or paragraph part */
+.description {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);  
+}
+.description article{
+    padding-bottom: 2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+}
+.description a{   
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+}
+
+/* where you will sleep */
+.aboutbed{
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);  
+}
+.aboutbed h3{
+    padding-bottom:2rem;
+    font-size: 21px;
+}
+.box{
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    line-height: 2rem;
+}
+.box i{
+    font-size: 21px;
+}
+.box p{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* What this place offers */
+.facilities{
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);  
+}
+.facilities h3{
+    font-size: 21px;
+}
+.facilities-list{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.col-1{
+    flex-shrink: -1;
+}
+.item{
+    margin: 1rem 0;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+.item i{
+    padding-right: 10px;
+    font-size: 21px;
+}
+.load-more-button{
+    background-color: #ffff;
+    padding: 16px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.load-more-button a{
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+.load-more-button:hover{
+    background-color: aliceblue;
+}
+.load-more-button a:hover{
+    text-decoration: underline;
+}
+
+/* Selecting dates */
+.booking-calender{
+    padding: 2rem 0;
+}
+.booking-calender h3{
+    font-size: 21px;
+    line-height: 2rem;
+}
+.booking-calender p{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
